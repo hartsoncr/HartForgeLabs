@@ -1,0 +1,161 @@
+.project-body {
+  background:
+    radial-gradient(circle at 15% 15%, rgba(255, 111, 0, 0.16), transparent 24%),
+    radial-gradient(circle at 85% 18%, rgba(255, 216, 176, 0.52), transparent 22%),
+    linear-gradient(180deg, #171614 0%, #1e1c19 36%, #201914 100%);
+  color: #f5ede4;
+}
+
+.project-body::before {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.72), transparent 92%);
+}
+
+.project-shell {
+  --content-width: 1240px;
+}
+
+.project-header {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: rgba(18, 17, 15, 0.7);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.24);
+}
+
+.project-footer,
+.project-body .eyebrow,
+.project-body .status-label,
+.project-body .hero-text,
+.project-body .panel-copy {
+  color: rgba(245, 237, 228, 0.74);
+}
+
+.project-body .brand,
+.project-body h1 span {
+  color: #ff7a1b;
+}
+
+.project-body .section {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(27, 24, 22, 0.92), rgba(17, 16, 14, 0.88));
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.24);
+}
+
+.project-holding-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: 26px;
+  align-items: stretch;
+  margin: auto 0;
+  min-height: min(72vh, 760px);
+}
+
+.project-holding-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  padding: 10px;
+}
+
+.project-body h1 {
+  max-width: 12ch;
+  color: #fff7ef;
+}
+
+.project-intro {
+  max-width: 48ch;
+}
+
+.project-holding-panel {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, rgba(28, 25, 22, 0.9), rgba(17, 16, 14, 0.9));
+}
+
+.project-holding-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(255, 122, 27, 0.16), transparent 34%),
+    linear-gradient(180deg, rgba(28, 25, 22, 0.96), rgba(17, 16, 14, 0.92));
+}
+
+.project-cover-frame {
+  position: relative;
+  padding-bottom: 48px;
+}
+
+.project-cover-image {
+  display: block;
+  width: 100%;
+  min-height: 220px;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+.project-profile-mark {
+  position: absolute;
+  left: 22px;
+  bottom: 0;
+  width: 96px;
+  height: 96px;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(18, 17, 15, 0.98), rgba(26, 21, 17, 0.94));
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+.project-status-grid {
+  gap: 18px;
+}
+
+.project-status-grid strong,
+.project-footer,
+.project-body .button-secondary {
+  color: #fff7ef;
+}
+
+.project-footer {
+  padding-top: 6px;
+}
+
+.project-body .button-primary {
+  background: linear-gradient(135deg, #ff7a1b, #ff4f0f);
+  color: #1a1511;
+}
+
+.project-body .button-secondary {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+@media (max-width: 980px) {
+  .project-holding-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-holding-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .project-profile-mark {
+    left: 16px;
+    width: 82px;
+    height: 82px;
+  }
+
+  .project-body .button-primary,
+  .project-body .button-secondary {
+    width: 100%;
+  }
+}
