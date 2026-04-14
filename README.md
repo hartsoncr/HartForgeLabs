@@ -1,1 +1,1 @@
-# HartForge-Labs
+# HartForgeLabs
